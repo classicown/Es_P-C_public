@@ -14,7 +14,7 @@ def test_main_page(client):
     response = client.get('/')
     assert response.status_code == 200
     assert "Formulaire" in response.data.decode('utf-8')  # .decode('utf-8') pour traiter la réponse en chaîne
- def test_resultat_correct(client):
+def test_resultat_correct(client):
     """Teste le cas où les réponses 1 et 2 sont cochées"""
     response = client.post('/resultat', data={'reponse1': 'Oui', 'reponse2': 'Oui'})
     assert response.status_code == 200

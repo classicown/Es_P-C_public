@@ -1,0 +1,15 @@
+header{
+  text-align: center;
+  background-color: red;
+  font: 1em "Open Sans",sans-serif; 
+  /* Le header est pour que les utilisateurs puisse voir le titre. */
+}
+body{
+  background-color: white;
+  font: 1em "Open Sans",sans-serif; 
+  /* Le body est le corps de la page web */
+}
+#bouton{
+  display: block;
+  margin: 0 auto;
+}

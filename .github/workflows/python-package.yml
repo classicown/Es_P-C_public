@@ -40,4 +40,4 @@ jobs:
     - name: Test with pytest
       run: |
         pip install pytest
-        pytest -vs .github/python_ci/test.py
+        pytest -vs ../../test_/pytest.py

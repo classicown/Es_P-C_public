@@ -40,4 +40,7 @@ jobs:
     - name: Test with pytest
       run: |
         pip install pytest
+        find . -type d -name "__pycache__" -exec rm -r {} + 
+        find . -type f -name "*.pyc" -delete
+        mv test_/pytest.py test_/test_pytest.py
         pytest test_/pytest.py

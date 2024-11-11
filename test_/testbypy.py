@@ -31,3 +31,7 @@ def test_missing_answers(client):
     response = client.post('/resultat', data={})
     assert response.status_code == 400
     assert "Veuillez répondre à toutes les questions." in response.data.decode('utf-8')
+import sys
+import os
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+from baseserv import app  # Assurez-vous que l'application Flask est bien importée depuis baseserv.py

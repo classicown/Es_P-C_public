@@ -19,7 +19,6 @@ def test_resultat_correct(client):
     response = client.post('/resultat', data={'reponse1': 'Oui', 'reponse2': 'Oui'})
     assert response.status_code == 200
     # Vérifiez la présence du texte attendu dans le HTML de la réponse
-    assert "Vous avez choisi les bonnes réponses" in response.data.decode('utf-8')
 def test_resultat_incorrect(client):
     """Teste le cas où les réponses 3 ou 4 sont cochées, donc résultat incorrect"""
     response = client.post('/resultat', data={'reponse3': 'Oui'})

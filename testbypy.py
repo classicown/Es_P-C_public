@@ -6,7 +6,7 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')
 from panneausolaire import app
  # Assurez-vous que l'application Flask est bien importée depuis baseserv.py
 @pytest.fixture
- def client():
+def client():
     with app.test_client() as client:
         yield client
 def test_main_page(client):

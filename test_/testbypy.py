@@ -1,6 +1,6 @@
 # tests/test_baseserv.py
 import pytest
-from baseserv import Flask # Assurez-vous que l'application Flask est bien importée depuis baseserv.py
+from baseserv.py import Flask # Assurez-vous que l'application Flask est bien importée depuis baseserv.py
 @pytest.fixture
 def client():
     """Fixture qui initialise un client de test pour Flask"""

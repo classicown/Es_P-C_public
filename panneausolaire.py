@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route('/')  # Affichage de la page d'accueil
 def main():
-    return render_template("question_1.html", style="questiontheme1.css")
+    return render_template("question1.html", style="questiontheme1.css")
 
 @app.route('/resultat', methods=['POST'])  # Affichage des résultats en utilisant la méthode POST
 def resultat():
